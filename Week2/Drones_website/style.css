@@ -1,0 +1,390 @@
+/* This CSS file process the following points:
+1- Make grid view based on float method
+2- Make grid view based on flexbox method
+3- Change style to be responsive and look organised on various devices.
+*/
+
+
+/* Global Style */
+
+/* josefin-sans-700 - latin */
+@font-face {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/josefin-sans-v14-latin-700.eot'); /* IE9 Compat Modes */
+    src: local('Josefin Sans Bold'), local('JosefinSans-Bold'),
+         url('fonts/josefin-sans-v14-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/josefin-sans-v14-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/josefin-sans-v14-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('fonts/josefin-sans-v14-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/josefin-sans-v14-latin-700.svg#JosefinSans') format('svg'); /* Legacy iOS */
+  }
+
+/* courgette-regular - latin */
+@font-face {
+    font-family: 'Courgette';
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/courgette-v7-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Courgette Regular'), local('Courgette-Regular'),
+         url('fonts/courgette-v7-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/courgette-v7-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/courgette-v7-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('fonts/courgette-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/courgette-v7-latin-regular.svg#Courgette') format('svg'); /* Legacy iOS */
+  }
+
+body {
+	margin: 0px;
+    padding: 0px;
+    height: auto;
+	color: #666;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 12px;
+	line-height: 1.5em; 
+	background-color: #8d8c88;
+	background-image: url(images/Body_bg.jpg);
+    background-repeat: repeat;
+    
+}
+
+main {
+    display: grid;
+    overflow: hidden;
+    
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; 
+}
+
+
+h1 {
+    font-size: 4rem;
+    font-family: 'Josefin Sans', sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    margin: 4rem 0 4rem 0;
+    transition: transform .2s;
+}
+
+h1:hover{
+    transform: scale(1.5);
+  }
+
+h2 {
+    font-size: 3rem;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #f18080;
+    margin: 4rem 0 2rem 1.25rem;
+    text-decoration: underline;
+    /* Transition attributes for h2 */
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+}
+
+h2:hover {
+    -webkit-transform: translate(1em,0);
+    -moz-transform: translate(1em,0);
+    -o-transform: translate(1em,0);
+    -ms-transform: translate(1em,0);
+    transform: translate(1em,0);
+}
+
+
+h3 {
+    font-size: 1.2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #000000;
+    margin: 1rem 0 0 0;
+}
+
+p {
+    font-size: 1.2rem;
+    font-family: 'Courgette', sans-serif;
+    color: #000000;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    text-align: center;
+    line-height: normal;
+}
+
+img {
+    width: 60%;
+    margin: 2rem auto 2rem auto;
+    display: block;
+}
+
+/* Transition attributes for Grid-items */
+/* Wobble Vertical */
+@-webkit-keyframes hvr-wobble-vertical {
+    16.65% {
+      -webkit-transform: translateY(8px);
+      transform: translateY(8px);
+    }
+    33.3% {
+      -webkit-transform: translateY(-6px);
+      transform: translateY(-6px);
+    }
+    49.95% {
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);
+    }
+    66.6% {
+      -webkit-transform: translateY(-2px);
+      transform: translateY(-2px);
+    }
+    83.25% {
+      -webkit-transform: translateY(1px);
+      transform: translateY(1px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  @keyframes hvr-wobble-vertical {
+    16.65% {
+      -webkit-transform: translateY(8px);
+      transform: translateY(8px);
+    }
+    33.3% {
+      -webkit-transform: translateY(-6px);
+      transform: translateY(-6px);
+    }
+    49.95% {
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);
+    }
+    66.6% {
+      -webkit-transform: translateY(-2px);
+      transform: translateY(-2px);
+    }
+    83.25% {
+      -webkit-transform: translateY(1px);
+      transform: translateY(1px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+
+.grid-item {
+    border-radius: 0.5rem;
+    text-align: center;
+    width:23%;
+    height: 30rem;
+    margin: 1%;
+    background-color: white;
+    /* Transition attributes for Grid-items */
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.grid-item:hover {
+    -webkit-animation-name: hvr-wobble-vertical;
+    animation-name: hvr-wobble-vertical;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+/* End of Global Style ----------------------------------------------------------------------------------------*/
+
+
+
+
+/* Grid Floats Style */
+
+
+#grid-floats {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    
+}
+
+
+#grid-floats .grid-item {
+    float: left;
+    position:relative;
+    overflow: hidden;
+
+}
+
+#grid-floats li:first-child{
+    width: 48%;
+}
+
+
+/* End of Grid Floats Style  ----------------------------------------------------------------------------------------*/
+
+
+
+/* Grid Flex Style */
+
+#grid-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#grid-flex .grid-item {
+    flex: 1 1 23%;
+}
+
+#grid-flex li:first-child {
+    flex-basis: 48%;
+    
+}
+/* End of Grid Flex Style  ----------------------------------------------------------------------------------------*/
+
+
+
+/* Change style to be responsive to ------Mobile devices--------- */
+
+@media (max-width: 600px) {
+
+
+    /* Grid Float */
+
+    #grid-floats .grid-item {
+        width: 48%;
+        height: 25rem;
+        
+    
+        
+    }
+    
+    #grid-floats li:first-child{
+        width: 98%;
+        height: 22.5rem;
+        
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+        
+    }
+
+    p{
+        font-size: 0.9rem;
+        margin: 0.5rem 0.2rem 0.7rem 0.2rem;
+    }
+
+
+    img {
+        margin: 1rem auto 1rem auto;
+    }
+
+
+    /* End of Grid Float  ----------------------------------------*/
+
+
+
+    /* Grid Flex */
+
+    #grid-flex .grid-item {
+        flex: 1 1 46%;
+        height: 25rem;
+    }
+    
+    #grid-flex li:first-child {
+        flex-basis: 96%;
+        height: 22.5rem;
+        
+    }
+
+
+    /* End of Grid Flex ----------------------------------------*/
+
+}
+
+/* End of Mobile style changes ----------------------------------------------------------------------------*/
+
+
+
+
+
+
+/* Change style to be responsive to -----Tablets devices------*/
+
+@media (min-width: 600px) and (max-width: 1024px) {
+
+
+    /* Grid Float */
+
+    #grid-floats .grid-item {
+        width: 31.33%;
+        height: 25rem;
+        
+    
+        
+    }
+    
+    #grid-floats li:first-child, #grid-floats .grid-item:nth-child(2) {
+        width: 48%;
+        height: 22.5rem;
+        
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+        
+    }
+
+    p{
+        font-size: 1rem;
+        margin: 0.5rem 0.2rem 0.7rem 0.2rem;
+    }
+
+
+    img {
+        margin: 1rem auto 1rem auto;
+    }
+
+
+    /* End of Grid Float ----------------------------------------------*/
+
+
+
+    /* Grid Flex */
+
+    #grid-flex .grid-item {
+        flex: 1 1 31.33%;
+        height: 25rem;
+    }
+    
+    #grid-flex li:first-child, #grid-flex .grid-item:nth-child(2) {
+        flex-basis: 48%;
+        height: 22.5rem;
+        
+    }
+
+
+    /* End of Grid Flex ---------------------------------------------*/
+
+}
+
+/* End of Tablets style changes -----------------------------------------------------------------------------*/
+
+
