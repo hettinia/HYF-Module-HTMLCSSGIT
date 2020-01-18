@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">    
+	<link rel="stylesheet" href="Style/MyStyle.css" type="text/css"/>
+	<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+	<title>Moomin Museum-Clone</title>
+</head>
+<body>
+	<header>
+		<!-- navbar -->
+		
+			<div Class="row center-align">
+				<div class="logo">
+					<a href="#" ><img src="Images/logo-muumimuseo-fi.png" class="responsive-img"></a>
+					<a href="#" class="sidenav-trigger" data-target="mobile-links">
+						<i class="material-icons right-align hide-on-large-only menu-icon">menu</i>
+					</a>
+				</div>
+
+				<div class="menu hide-on-med-and-down">
+					<ul>
+						<li >
+							<a class="dropdown-trigger" data-target="dropdown1" href="#">Exhibitions</a>
+							<ul id='dropdown1' class='sub-menu dropdown-content'>
+								<li>
+									<a href="#">What Happens Next?</a>
+								</li>
+								<li>
+									<a href="#">Observatory</a>
+								</li>
+								<li>
+									<a href="#">The Moomin Museum Reading Room</a>
+								</li>
+								<li>
+									<a href="#">Studio</a>
+								</li>
+								<li>
+									<a href="#">Shop</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class='dropdown-trigger' data-target='dropdown2'>Visit us</a>
+							<ul id='dropdown2' class='sub-menu dropdown-content'>
+								<li>
+									<a href="#">Info</a>
+								</li>
+								<li>
+									<a href="#">Guides and workshops</a>
+								</li>
+								<li>
+									<a href="#">Groups</a>
+								</li>
+								<li>
+									<a href="#">The Moomin Museum Reading Room</a>
+								</li>
+								<li>
+									<a href="#">Restaurants</a>
+								</li>
+								<li>
+									<a href="#">Shop</a>
+								</li>
+								<li>
+									<a href="#">Competition</a>
+								</li>
+							</ul>
+						</li>
+						<li><a href="#">News</a>
+						</li>
+						<li>
+							<a href="#" class='dropdown-trigger' data-target='dropdown3'>Moomin museum</a>
+							<ul id='dropdown3' class='sub-menu dropdown-content'>
+								<li>
+									<a href="#">About Tove Jansson</a>
+								</li>
+								<li>
+									<a href="#">About the collection</a>
+								</li>
+							</ul>
+						</li>
+						<li><a href="#">Restaurants</a></li>
+						<li><a href="#">Shop</a></li>
+						<li>
+							<a href="#" class='dropdown-trigger' data-target='dropdown4'>Contact us</a>
+							<ul id='dropdown4' class='sub-menu dropdown-content'>
+								<li>
+									<a href="#">Museum personnel</a>
+								</li>
+								<li>
+									<a href="#">For the media</a>
+								</li>
+								<li>
+									<a href="#">Links</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+
+					
+				</div>
+
+				
+				
+			</div>
+
+			
+
+
+			
+
+			<!-- languages list
+			<div class="input-field col s12 m6">
+			<select class="icons">
+			  <option value="" data-icon="images/en.png" class="center"></option>
+			  <option value="" data-icon="images/fi.png" class="center"></option>
+			  <option value="" data-icon="images/ja.png" class="center"></option>
+			  <option value="" data-icon="images/sv.png" class="center"></option>
+			  <option value="" data-icon="images/ru.png" class="center"></option>
+			</select>
+		
+		  </div>
+		  -->
+			
+		
+
+		<!-- navbar for Mobile size-->
+		<ul class="sidenav collapsible" id="mobile-links">
+			<a href="#" class="brand-logo"><img src="Images/logo-muumimuseo-fi.png"></a>
+			<li>
+				<a href="#" class="collapsible-header">Exhibitions<i class="material-icons right">expand_more</i></a>
+				<ul class="collapsible-body">
+
+					<li >
+							<a href="#">What Happens Next?</a>
+					</li>
+					<li>
+							<a href="#">Observatory</a>
+					</li>
+					<li>
+							<a href="#">The Moomin Museum Reading Room</a>
+					</li>
+					<li>
+							<a href="#">Studio</a>
+					</li>
+					<li>
+							<a href="#">Shop</a>
+					</li>
+				</ul>  
+			</li>
+			<li>
+				<a href="#" class="collapsible-header">Visit us<i class="material-icons right">expand_more</i></a>
+				<ul class="collapsible-body">
+					<li>
+						<a href="#">Info</a>
+					</li>
+					<li>
+						<a href="#">Guides and workshops</a>
+					</li>
+					<li>
+						<a href="#">Groups</a>
+					</li>
+					<li>
+						<a href="#">The Moomin Museum Reading Room</a>
+					</li>
+					<li>
+						<a href="#">Restaurants</a>
+					</li>
+					<li>
+						<a href="#">Shop</a>
+					</li>
+					<li>
+						<a href="#">Competition</a>
+					</li>
+				</ul>
+			</li>
+			<li><a href="#">News</a>
+			</li>
+			<li>
+				<a href="#" class="collapsible-header">Moomin museum<i class="material-icons right">expand_more</i></a>
+				<ul class="collapsible-body">
+					<li>
+						<a href="#">About Tove Jansson</a>
+					</li>
+					<li>
+						<a href="#">About the collection</a>
+					</li>
+				</ul>
+			</li>
+			<li><a href="#">Restaurants</a></li>
+			<li><a href="#">Shop</a></li>
+			<li>
+				<a href="#" class="collapsible-header">Contact us<i class="material-icons right">expand_more</i></a>
+				<ul class="collapsible-body">
+					<li>
+						<a href="#">Museum personnel</a>
+					</li>
+					<li>
+						<a href="#">For the media</a>
+					</li>
+					<li>
+						<a href="#">Links</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+
+		 
+
+	</header>
+
+
+	<!-- Content -->
+	<main class="container center-align">
+
+		<div class="row mainbanner">
+
+			<div class="col l12 m12 s12 top-banner">
+				<img src="images/m-131-web-v-1024x295.jpg">
+			</div>
+
+			<div class=" mid-banner">
+				<div class="col l8 m8 s12 offset-l2 offset-m2 mid-banner-title">
+					<h1>The world’s only Moomin Museum</h1>
+					<h2>in Tampere, Finland!</h2>
+					
+				</div>
+				<div class="col l2 m2 s12 circle-icon">
+					<a href="#" class=""><h4>Info</h4></a>
+				</div>
+			</div>
+
+			<div class="col l12 m12 s12 btm-banner">
+
+				<img src="images/mv2.jpg">
+
+			</div>
+
+		</div>
+
+		<div class="row container1">
+			<div class="col l11 m11 s12 white-text">
+				<p>Tue-Wed 9am-5pm, Thu-Fri 9am-7pm, Sat-Sun 10am-5pm, closed Mon / Adults 13 €, children 6 € / Tampere Hall, Yliopistonkatu 55, Tampere, Finland</p>
+			</div>
+			<div class="col l1 m1 s12">
+				<a href="#"><img src="images/museokortti_ikoni.jpg"></a>
+			</div>
+		</div>
+
+		<div class="row exhibitions-header">
+			<div class="col l4 m4 hide-on-small-only">
+				<img src="images/silmat-vasen.gif">
+			</div>
+			<div class="col l4 m4 s12">
+				<h2>Exhibitions</h2>
+			</div>
+			<div class="col l4 m4 hide-on-small-only">
+				<img src="images/silmat-oikea.gif">
+			</div>
+
+		</div>
+
+		<div class="exhibitions row">
+			<div class="row">
+
+				<div class="col l6 m6 s12">
+					<div class="carousel carousel-slider" id="carousel-auto">
+						<img src="images/A7A5306-570px.jpg" alt="" class="carousel-item responsive-img">
+						<img src="images/m-155-web-v_285px.jpg" alt="" class="carousel-item responsive-img">
+						<img src="images/A7A5931-570-px.jpg" alt="" class="carousel-item responsive-img">
+						
+					</div>
+					<div class="row">
+						
+						<h2 class="black-text">What Happens Next?</h2>
+						<p>Where did the ancestors of the Moomins live? What was Moominpappa’s stormy youth like? What do Hattifatteners do during a thunderstorm? These and many other secrets are revealed in What Happens Next?.The Moomin Museum’s first permanent exhibition retells the entire story of the Moomins, starting from the Great Flood and the mad midsummer’s floating theatre to the puzzle of the lighthouse and the mysterious disappearance of the Moomins one grey November day.</p>
+					</div>
+
+				</div>
+
+				<div class="col l3 m3 s12">
+					<div class="">
+						<img src="images/Moominvalley-animation-series_Gutsy-Animations_Last-Dragon-ei-iso-720x720.jpg" alt="" class="responsive-img">
+						
+					</div>
+					<div class="row">
+						
+						<h2>In the Observatory</h2>
+						<p>Our exhibition “Moomin Animations – Thrills and Cuddles” tells about the history of Moomin animations. Until 26th Jan 2020!</p>
+					</div>
+
+				</div>
+				
+				<div class="col l3 m3 s12">
+					<div class="third-exht">
+						<a href="#">
+							<img src="images/A7A5934-260x260.jpg" alt="" class="responsive-img">
+							
+						</a>
+					</div>
+					<div class="exht-hrf row">
+						<a href="#">
+							
+							<h3>01/01/2021</h3>
+							<h2>Free guided tours in English every weekend!</h2>
+							<p>The Moomin Museum offers free guided tours in English every Saturday and Sunday at 1 pm (Note the new time!). We can take 20 persons on [...]	</p>
+						</a>
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+
+		
+		<div class="news-header row">
+			<div class="col l4 m4 hide-on-small-only">
+				<img src="images/silmat-vasen.gif" class="responsive-img">
+			</div>
+			<div class="col l4 m4 s12">
+				<h2>News</h2>
+			</div>
+			<div class="col l4 m4 hide-on-small-only">
+				<img src="images/silmat-oikea.gif" class="responsive-img">
+			</div>
+	
+		</div>
+
+			<div class="news row">
+				<div class="col l10 m10 s12">
+					<div class="row">
+						<h2>For Christmas enthusiastics</h2>
+					</div>
+					<div class="row">
+						<p>The one and only Moomin Christmas story: The Fir Tree! Every Saturday and Sunday before Christmas you can sit down and relax by listening to the Tove Jansson's touching short story in Finnish at 11am and in English at 1pm.</p>
+					</div>
+	
+				</div>
+
+				<div class="col l2 m2 s12 circle-icon2">
+					
+					<a href="#" class=""><h4>Fir Tree</h4></a>
+				</div>
+				
+			</div>
+
+			<div class="news row">
+				<div class="col l10 m10 s12">
+					<div class="row">
+						<h2>Christmas mood in the Studio!</h2>
+					</div>
+					<div class="row">
+						<p>In the Studio you can make your own electric Christmas card every day from noon to 4pm: our animation workshop has turned into Christmas mood! </p>
+					</div>
+
+				</div>
+				
+				<div class="col l2 m2 s12 circle-icon2">
+					
+					<a href="#" class=""><h4>Merry!</h4></a>
+				</div>
+			</div>
+
+			<div class="news row">
+				<div class="col l10 m10 s12">
+					<div class="row">
+						<h2>Moomin Museum Guest of Honour</h2>
+					</div>
+					<div class="row">
+						<p>Sigrid fom Belgium won the competition and the is the world's biggest Moomin fan. See a video of her adventures in Finland!</p>
+					</div>
+	
+				</div>
+				
+				<div class="col l2 m2 s12 circle-icon2">
+					
+					<a href="#" class=""><h4>Fan nr 1</h4></a>
+				</div>
+				
+			</div>
+
+		
+
+		<div class="quote-block row">
+			<p>All things are so very uncertain and that's exactly what's makes me reassured. </p>
+			<h2>Too-ticky, Moominland Midwinter</h2>
+		</div>
+
+		<div class="row quote-block-content">
+			<div class="col l6 m6 s12">
+				<h2>Tampere Hall Shop</h2>
+				<p>The shop is open to museum guests and all visitors at Tampere Hall. The range includes exciting Moomin souvenirs, design and music, books written and illustrated by Tove Jansson, Tampere souvenirs, and classic Finnish design brands.
+
+					You will additionally find hand-made crafts by Finnish designers as well as music by the Tampere Philharmonic Orchestra, which is also based at Tampere Hall. Here you can buy Moomin postcards and stamps and have your letters stamped with a special Moomin postmark.</p>
+			</div>
+			<div class="col l6 m6 s12">
+				<img src="images/Kuvagalleria-5.jpg" alt="" class="responsive-img">
+			</div>
+		</div>
+
+		<div class="quote-block">
+			<p>‘Well, it’ll be another nice long day tomorrow,’ said Moominmamma. ‘And it’s all yours from beginning to end. Now isn’t that a lovely thought!</p>
+			<h2>Moominmamma, from Moominpappa at Sea</h2>
+		</div>
+
+		<div class="row quote-block-content">
+			
+			<div class="col l6 m6 s12">
+				<img src="images/Lukikirjasto-1.jpg" alt="" class="responsive-img">
+			</div>
+
+			<div class="col l6 m6 s12">
+				
+				<p>Take a seat and enjoy a quiet moment with one of Jansson’s books in the Moomin Museum Reading Room. In our Reading Room you will find Moomin books in over 20 languages, along with other books by and about Jansson. The collection features historical rarities and fresh copies of every new Moomin edition.</p>
+			</div>
+		</div>
+
+		<div class="row footer-logo">
+			<div class="col l4 m4 s12">
+				<img src="images/footer-logo-tampere-talo.png" alt="" class="responsive-img">
+			</div>
+			<div class="col l4 m4 s12">
+				<img src="images/footer-logo-muumimuseo.png" alt="" class="responsive-img">
+			</div>
+			<div class="col l4 m4 s12">
+				<img src="images/footer-logo-tampere-filharmonia.png" alt="" class="responsive-img">
+			</div>
+		</div>
+
+		
+	</main>	
+
+	<!-- footer -->
+	<footer>
+		<div class="footer-background">
+		<div class="row">
+			<div class="footer-list col l2 m2 s12">
+				<a href=""></a><h3>Moomin Museum</h3>
+				<ul>
+					<a href=""><li>Tampere Hall</li></a>
+					<a href=""><li>Yliopistonkatu 55</li></a>
+					<a href=""><li>33100 Tampere, Finland</li></a>
+					<a href=""><li>+358 3 243 4111</li></a>
+				</ul>
+				
+			</div>
+			<div class="footer-list col l2 m2 s12">
+				<a href=""><h3>Exhibitions</h3></a>
+				<ul>
+					<a href=""><li>What Happens Next?</li></a>
+					<a href=""><li>Tove Jansson and the Moomins</li></a>
+					<a href=""><li>Studio</li></a>
+					<a href=""><li>The Moomin Museum Reading Room</li></a>
+				</ul>
+				
+			</div>
+			<div class="footer-list col l2 m2 s12">
+				<a href=""><h3>Visit us</h3></a>
+				<ul>
+					<a href=""><li>Guides</li></a>
+					<a href=""><li>Groups</li></a>
+					<a href=""><li>The Moomin Museum Reading Room</li></a>
+					<a href=""><li>Restaurants</li></a>
+					<a href=""><li>Tampere Hall Shop</li></a>
+				</ul>
+				
+			</div>
+			<div class="footer-list col l2 m2 s12">
+				<a href=""><h3>Moomin museum</h3></a>
+				<ul> 
+					<a href=""><li>About Tove Jansson</li></a>
+					<a href=""><li>About the collection</li></a>
+				</ul>
+				
+			</div>
+			<div class="footer-list col l2 m2 s12">
+				<a href=""><h3>Contact us</h3></a>
+				<ul>
+					<a href=""><li>Museum personnel</li></a>
+					<a href=""><li>For the media</li></a>
+					<a href=""><li>Links</li></a>
+				</ul>
+				
+			</div>
+			<div class="footer-list col l2 m2 s12">
+				<a href=""><h3>Tampere Hall</h3></a>
+			</div>
+		</div>
+
+		<div class="row">
+			
+				
+			<a href="#" class="btn-large transparent footer-btn">Contact Us</a>
+			
+			
+		</div>
+
+		<div class="row">
+			
+			<a href="#" class="btn-large transparent footer-btn">Feedback</a>
+				
+		</div>
+
+		<div class="row">
+			
+			
+		</div>
+	</div>
+
+	</footer>
+	
+
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+		$('.sidenav').sidenav();
+		
+    });
+	
+	$('.dropdown-trigger').dropdown({
+		hover: true,
+		coverTrigger: false,
+		constrainWidth: false
+	});  
+
+	$(document).ready(function(){
+    	$('.collapsible').collapsible();
+    });
+
+	$(document).ready(function(){
+    	$('select').formSelect();
+  	})
+
+	
+
+	$(document).ready(function(){
+ 
+ 	$('#carousel-auto').carousel();
+ 
+  	setInterval(function() {
+ 
+    $('#carousel-auto').carousel('next');
+ 
+  	}, 2500), {indicators: true};   
+ 
+   });
+
+	
+  
+  </script>
+</body>
+</html>
