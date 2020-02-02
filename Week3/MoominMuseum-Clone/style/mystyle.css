@@ -52,7 +52,7 @@ header .logo {
     float: left;
 }
 header .logo img { 
-    max-width:200px; 
+    max-width: 12.5rem; 
 }
 header .menu {
     font-family: "Montserrat",sans-serif; 
@@ -69,11 +69,11 @@ header .menu > ul > li {
     position:relative; 
 }
 header .menu > ul > li > a {
-    font-size: 14px; 
+    font-size: 0.875rem; 
     letter-spacing: 1px; 
     float:left; 
     display:block; 
-    padding:40px 10px; 
+    padding: 2.5rem 0.625rem; 
     color:#333; 
     text-transform:uppercase;
 }
@@ -84,8 +84,8 @@ header .menu > ul > li > a:hover {
 
 header .menu > ul > li > ul { 
     display:none;  
-    width: 220px; 
-    padding:10px; 
+    width: 13.75rem; 
+    padding: 0.625rem; 
     z-index: 1;  
     background-size:cover;  
     background-color: #32804B;
@@ -132,14 +132,14 @@ header .menu > ul > li > ul > li > a:hover {
   width: 70%;
   
   position: absolute;
-  top: 350px;
-  left: 210px;
+  top: 21.875rem;
+  left: 14.125rem;
 }
 
 
 .mid-banner-title {
     background-color: white;
-    height: 130px;
+    height: 8.125rem;
 }
 
 .mid-banner-title h1 {
@@ -157,8 +157,8 @@ header .menu > ul > li > ul > li > a:hover {
 
 .circle-icon a {
     background-color: #E94E0F;
-    width: 100px;
-    height: 100px;
+    width: 7rem;
+    height: 7rem;
     display: inline-block;
     border-radius: 50%;
     font-family: 'Pacifico', cursive;
@@ -229,7 +229,7 @@ header .menu > ul > li > ul > li > a:hover {
 }
 
 .carousel {
-    height: 236px;
+    height: 15.7rem;
 }
 
 .exht-hrf h2 {
@@ -255,7 +255,7 @@ header .menu > ul > li > ul > li > a:hover {
 
 .news {
     background-color: #7AB7BC;
-    height: 200px;
+    height: 13rem;
     margin-bottom: 0.1rem;
 }
 
@@ -277,8 +277,8 @@ header .menu > ul > li > ul > li > a:hover {
 
 .circle-icon2 a {
     background-color: #E94E0F;
-    width: 100px;
-    height: 100px;
+    width: 7rem;
+    height: 7rem;
     display: inline-block;
     border-radius: 50%;
     font-family: 'Pacifico', cursive;
@@ -363,7 +363,7 @@ footer .row {
 
 .footer-btn {
     width: 12rem;
-    border: 2px solid white;
+    border: 0.2rem solid white;
     margin: 1rem 0 0.5rem 0;
     font-family: 'Roboto', sans-serif;
 
@@ -397,16 +397,15 @@ footer .row {
     }
     .mid-banner {
         width: 90%;
-        
         position: absolute;
-        top: 240px;
-        left: 45px;
+        top: 17.5rem;
+        left: 3rem;
       }
       
       
       .mid-banner-title {
           background-color: white;
-          height: 100px;
+          height: 7rem;
       }
 
       .mid-banner-title h1 {
@@ -428,7 +427,7 @@ footer .row {
         margin-left: -6rem;
     }
     .carousel {
-        height: 163px;
+        height: 12.7rem;
     }
     .quote-block-content h2 {
         font-size: 1.5rem;
@@ -479,7 +478,7 @@ footer .row {
       
       .mid-banner-title {
           background-color: white;
-          height: 100px;
+          height: 8rem;
       }
 
       .mid-banner-title h1 {
@@ -543,16 +542,4 @@ footer .row {
         font-size: 2rem;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
