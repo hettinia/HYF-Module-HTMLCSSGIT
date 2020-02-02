@@ -377,7 +377,7 @@ footer .row {
     }
 
     .menu-icon {
-        margin: -3rem -30rem 0 0;
+        margin: 1rem -30rem 0 0;
         float: right;
     }
 
@@ -426,7 +426,7 @@ footer .row {
         margin-left: -6rem;
     }
     .carousel {
-        height: 12.7rem;
+        height: 12rem;
     }
     .quote-block-content h2 {
         font-size: 1.5rem;
@@ -447,7 +447,7 @@ footer .row {
     }
 
     .menu-icon {
-        margin: -3rem -8rem 0 0;
+        margin: 1rem -8rem 0 0;
         float: right;
     }
 
